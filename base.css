@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+body::-webkit-scrollbar{
+        background: transparent;
+        border-radius: 10px;
+        border: 3px solid black;
+        
+    }
+body::-webkit-scrollbar-thumb{
+    background: #ff0000;
+    border-radius: 10px;
+}
+.allover{
+    border: 0px solid springgreen;
+}
+.bcgrnd{
+    background: url('bw_1080x960.jpg');
+    background-size: cover;
+    height:696px;
+    border: 0px solid yellow;
+}
+#wrapper{
+    
+    height: 695px;
+    background-image: url('Red-Smoke-Transparent-Images-PNG.png');
+    background-size: cover;
+    border:0px solid red;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    border:0px solid plum;
+    background: transparent;
+}
+#check{
+    visibility: hidden;
+    position: absolute;
+}
+.checkbttn{
+
+    font-size: 20px;
+    float: left;
+    display:inline;
+    margin-top: 10px;
+    margin-left: 6%;
+    visibility: hidden;
+    border: 0px solid greenyellow;
+    position: absolute;
+    cursor: pointer;
+}
+#logo{
+    font-size: 30px;
+    color:white;
+    border:0px solid slateblue;
+    height: 50px;
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 60px;
+}
+.ul{
+    border:0px solid springgreen;
+    float: right;
+    margin-right: 40px;
+    margin-top: 9px;
+}
+.ul li{
+    display: inline-block;
+    font-size: 16px;
+    border-bottom: 0px solid black;
+    padding: 0 30px;
+    line-height: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 2px 3px 3px grey;
+}
+.ul li:hover{
+    background-color: #ff0000;
+    color: white;
+}
+.ul li a{
+    color: black;
+}
+.ul li:hover a{
+    color: white;
+}
+@media (max-width:880px){
+    #logo{
+        margin-left: 30px;
+        font-size: 25px;
+    }
+    .ul{
+        margin-right:20px;
+    }
+    .ul li{
+        font-size: 15px;
+        padding: 0 25px;
+    }
+}
+@media (max-width:750px){
+    #logo{
+        margin-left: 15px;
+        font-size: 25px;
+    }
+    .ul{
+        margin-right:15px;
+    }
+    .ul li{
+        padding: 0 15px;
+    }
+}
+@media (max-width:620px){
+    *{
+        color: black;
+    }
+    .nav{
+        background: white;
+    }
+    .ul{    
+        margin:0;
+        width: 100%;
+        position: absolute;
+        transition: 1s;
+        left: -100%;
+    }
+    #logo{
+        margin-left: 40%;
+    }
+    .ul li{
+        display: block;
+        text-align: center;
+        background: black;
+        border-top:2px solid red;
+        box-shadow: none;
+    }
+    .ul li a{
+        color: white;
+    }
+    .ul::lastchild{
+        border-bottom: 2px solid red;
+    }
+    .checkbttn{
+        visibility: visible;
+        cursor: pointer;
+    }
+    #check:checked~.ul{
+        left:0;
+    }
+    #tag p,#tag h1{
+        color: white;
+    }
+    #tag{
+        margin-top: 50px;
+        margin-left: 5%;
+        height: 50%;
+        width: 40%;
+        border: 0px solid greenyellow;
+        text-align: justify;
+        font-size: 12px;
+    }
+    #tag h1{
+        font-size: 20px;
+    }
+
+}
+#tag{
+
+    margin-top: 50px;
+    margin-left: 10%;
+    height: 50%;
+    width: 30%;
+    border: 0px solid greenyellow;
+    text-align: justify;
+    font-size: 17px;
+    overflow: hidden;
+}
+#tag p{
+    padding-top: 40px;
+}
+
+/*.................about us...............*/
+
+#aboutus{
+    border: 0px solid red;
+    height: 295px;
+    color:  black;
+    background: white;
+}
+#aboutusa{
+    border:0px solid black;
+    height: 290px;
+    width: 39%;
+    float: left;
+    margin-left: 8%;
+    color: black;
+    overflow: hidden;
+}
+#aboutusb{
+    border:0px solid brown;
+    height: 290px;
+    float: right;
+    width: 39%;
+    margin-right: 8%;
+}
+#auh1{
+    margin-top: 20px;
+    color: #5c5c3d;
+}
+#aup{
+    margin-top: 30px;
+    color: rgb(87, 82, 82);
+    text-align: justify;
+}
+#usbtn{
+    height: 30px;
+    background: #ff0000;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    width: 120px;
+    box-shadow: 1px 3px 2px red;
+    margin-top: 25px;
+}
+.bar{
+    height: 10px;
+    width: 70%;
+    border: 0px solid black;
+    border-radius: 10px;
+    background: rgb(15, 0, 0);
+    margin-top: 5px;
+}
+#html{
+    height: 10px;
+    background: #ff0000;
+    width: 80%;
+    border-radius: 10px;
+}
+.allbar{
+    margin-top: 30px;
+}
+.barhtml{
+    color: black;
+}
+#css{
+    height: 10px;
+    background: #ff0000;
+    width: 60%;
+    border-radius: 10px;
+}
+#jscript{
+    height: 10px;
+    background: #ff0000;
+    width: 40%;
+    border-radius: 10px;
+}
+#python{
+    height: 10px;
+    background: #ff0000;
+    width: 05%;
+    border-radius: 10px;
+}
+
+/*-----------------Our Services-------------------*/
+
+.ourservices{
+    background: linear-gradient(to bottom,rgba(0, 0, 0,0.4),rgba(0, 0, 0,0.4),rgba(0, 0, 0,0.4)),url('Laptop_on_Desk_HD_Wallpaper.jpg');
+    background-size: cover;
+    height: 300px;
+    border: 0px solid springgreen;
+    width: 100%;
+    text-align: center;
+}
+.ourservices h1{
+    margin-top: 25px;
+    font-family: Lucida Sans Unicode;
+    border-bottom: 2px solid white;
+}
+
+.boxa{
+    border:0px solid white;
+    width: 12%;
+    height:150px;
+    margin-top: 50px;
+    margin-left: 10%;
+    float: left;
+}
+.boxa:hover{
+    background: #ff0000;
+}
+.boxa span{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    border: 2px solid white;
+    margin-top: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding-top: 8px;
+}
+.boxa h4{
+    margin-top: 9px;
+    font-family: Regular;
+}
+.boxa p{
+    margin-top: 4px;
+    font-size: 13px;;
+}
+
+
+/*---------------------------Team Work----------------------*/
+
+#ourteam{
+    height: 330px;
+    background: white;
+    border: 0px solid yellow;
+    text-align: center;
+}
+#ourteam h1{
+    margin-top: 15px;
+    color:black;
+    border-bottom: 2px solid red;
+    font-family: Lucida Sans Unicode;
+    color: rgb(78, 76, 76);
+}
+.team{
+    margin-top: 13px;
+    height: 250px;
+    border:0px solid red;
+}
+.tbox{
+    height: 249px;
+    width:13%;
+    float: left;
+    border:0px solid black;
+    margin-left: 10%;
+}
+.tbox img{
+    width: 100%;
+    height: 160px;
+    border-radius: 5px;
+}
+.tbox h4{
+color: #ff0000;
+}
+.tbox span{
+color: black;
+font-size: small;
+}
+.tbox p{
+color: grey;
+font-size: smaller;
+}
+.tbox:hover{
+    background: #0a0a0a;
+    border-radius: 10px;
+    color: white;
+}
+.tbox:hover span{
+    color:white;    
+}
